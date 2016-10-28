@@ -1,6 +1,6 @@
 ### each function must return array
 
-package Telegram::DynamicKeyboards;
+package DynamicKeyboards;
 # use Exporter::Auto;
 use common::sense;
 
