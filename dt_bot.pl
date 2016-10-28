@@ -12,7 +12,7 @@ use DateTime::Format::ISO8601;
 use Data::Dumper;
 
 use FindBin;
-use lib "$Find::Bin/perlgram/lib";
+use lib "$FindBin::Bin/perlgram/lib";
 
 use Telegram::Wizard;
 use Telegram::Polling qw(get_last_messages);
