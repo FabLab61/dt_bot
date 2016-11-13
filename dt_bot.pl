@@ -14,12 +14,12 @@ use Data::Dumper;
 use FindBin;
 use lib "$FindBin::Bin/perlgram/lib";
 
-use Telegram::Wizard;
-use Telegram::Polling qw(get_last_messages);
+use Telegram::BotKit::Wizard;
+use Telegram::BotKit::Polling qw(get_last_messages);
 
 my $config = plugin JSONConfig => {file => 'config.json'};
 
-my $w = Telegram::Wizard->new({
+my $w = Telegram::BotKit::Wizard->new({
 	screens_arrayref => $config->{screens},
 	dyn_kbs_class => 'DynamicKeyboards',
 	keyboard_type => 'regular',
